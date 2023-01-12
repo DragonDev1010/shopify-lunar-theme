@@ -1,10 +1,16 @@
 <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 50px 16px 27px">
-  <button style="border: 1.5px solid #F9F8F5;border-radius: 50%;padding: 16px 9px;background: none;box-sizing: border-box;width: 48px;height: 48px;">
-    <p style="font-family: 'Univers'; font-size: 7px; line-height: 16px;color: #F9F8F5;">MENU</p>
+  <button class="primary-default-btn" onclick="openNav()">
+    <p style="">MENU</p>
   </button>
   <img src="{{section.settings.logo | img_url: '81x49' }}" />
   <img src="{{section.settings.cart-icon | img_url: '19x24'}}" alt="icon" />
 </div>
+<script>
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "50%";
+  }
+</script>
 {% schema %}
   {
     "name": "header-1",
