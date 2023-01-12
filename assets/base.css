@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Univers";
+  src: url("./fonts/univers/UniversBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/ogg/Ogg-Bold.ttf") format("ttf");
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+@media screen and (min-width: 750px) {
+  
+}
 /* Color custom properties */
 
 :root,
