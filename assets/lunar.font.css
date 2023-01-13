@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'Ogg-Regular';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/Ogg-Regular/Ogg-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Ogg-Italic';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/Ogg-Italic/OggTextBookItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'ry';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/ogg-new/Ogg-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/3562B4_2_0.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers Condensed Bold';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Bold/UniversCondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Univers Condensed Light';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Light/UniversCondensedLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Univers Condensed Regular';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Regular/UniversCondensedRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Univers Extended Bold';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Ext-Bold/UniversExtBold.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers Extended Regular';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Extended-Regular/UniversExtendedRegular.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers Extended Black';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Unvers-Ext-Black/UniversExtBlack.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers 45 light';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-45-light.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers 65 bold';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Uniivers-65-bold.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Ogg Book Italic';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/OggTextBookItalic.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Univers Extended Black';
+  src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Unvers-Ext-Black/UniversExtBlack.woff2") format("woff2");
+  /* IE9 Compat Modes */
+}
+
+.text-h1 {
+  font-family: 'Ogg';
+  font-size: 97px;
+  line-height: 113px;
+}
+
+.text-h2 {
+  font-family: 'Ogg';
+  font-size: 84px;
+  line-height: 90px;
+}
+
+.text-h3 {
+  font-family: 'Ogg';
+  font-size: 60px;
+  line-height: 68px;
+}
+
+.text-h4 {
+  font-family: 'Ogg';
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.text-quote {
+  font-family: 'OggText';
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text {
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 97px;
+  line-height: 113px;
+}
+
+.body-default {
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.body-default-mobile {
+  font-family: 'Univers';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-roman-sm {
+  font-family: 'Univers';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-roman-xsmall {
+  font-family: 'Univers';
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.eyebrow-extended-bold {
+  font-family: 'Univers';
+  font-size: 12px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.eyebrow-extended-regular {
+  font-family: 'Univers';
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.label-sm {
+  font-family: 'Univers';
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.458333px;
+  text-transform: uppercase;
+}
+
+.cta-primary {
+  font-family: 'Univers';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.16667px;
+  text-transform: uppercase;
+}
+
+.cta-footer {
+  font-family: 'Univers';
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.4375px;
+}
+
+.cta-text-link {
+  font-family: 'Univers';
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.52px;
+}
+
+.universe-14-31 {
+  font-family: 'Univers';
+  font-size: 14px;
+  line-height: 31px;
+}

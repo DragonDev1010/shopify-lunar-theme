@@ -399,6 +399,8 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'lunar.main.css' | asset_url | stylesheet_tag }}
+    {{ 'lunar.font.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link
@@ -447,6 +449,7 @@
     {% endcomment %}
     {% section 'header-1' %}
     {% section 'slide-navbar' %}
+    {% section 'slide-opencart' %}
     <main
       id="MainContent"
       class="content-for-layout focus-none"

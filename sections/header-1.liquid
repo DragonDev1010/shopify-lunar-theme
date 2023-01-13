@@ -2,13 +2,21 @@
   <button class="primary-default-btn" onclick="openNav()">
     <p style="">MENU</p>
   </button>
-  <img src="{{section.settings.logo | img_url: '81x49' }}" />
-  <img src="{{section.settings.cart-icon | img_url: '19x24'}}" alt="icon" />
+  <img src="{{section.settings.logo | img_url: '81x49' }}" style="cursor: pointer;" />
+  <img
+    src="{{section.settings.cart-icon | img_url: '19x24'}}"
+    alt="icon"
+    style="cursor: pointer;"
+    onclick="openSlideOpencart()" />
 </div>
 <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("slideNavbar").style.width = "50%";
+  }
+
+  function openSlideOpencart() {
+    document.getElementById("slideOpencart").style.width = "414px"
   }
 </script>
 {% schema %}
