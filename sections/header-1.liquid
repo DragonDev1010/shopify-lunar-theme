@@ -12,7 +12,12 @@
 <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
-    document.getElementById("slideNavbar").style.width = "50%";
+    var mediaQuery = window.matchMedia("(max-width: 700px)")
+    if (mediaQuery.matches) {
+      document.getElementById("slideNavbar").style.width = "100%";
+    } else {
+      document.getElementById("slideNavbar").style.width = "50%";
+    }
   }
 
   function openSlideOpencart() {
