@@ -3,11 +3,16 @@
     <p style="">MENU</p>
   </button>
   <img src="{{section.settings.logo | img_url: '81x49' }}" style="cursor: pointer;" />
-  <img
-    src="{{section.settings.cart-icon | img_url: '19x24'}}"
-    alt="icon"
-    style="cursor: pointer;"
-    onclick="openSlideOpencart()" />
+  <div style="display: flex; align-items:center; gap: 32px;">
+    <button style="background: none; border:none; outline:none;">
+      <p class="cta-text-link" style="color: var(--white-color);">Log In</p>
+    </button>
+    <img
+      src="{{section.settings.cart-icon | img_url: '19x24'}}"
+      alt="icon"
+      style="cursor: pointer;"
+      onclick="openSlideOpencart()" />
+  </div>
 </div>
 <script>
   /* Set the width of the side navigation to 250px */

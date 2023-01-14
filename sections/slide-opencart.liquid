@@ -10,24 +10,30 @@
             style="cursor: pointer;" />
         </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: space-between">
-        <img src="https://cdn.shopify.com/s/files/1/0706/8103/5071/files/kin_500ml_bottle.png?v=1673601668" style="width: 38px; height: 78px;" />
-        <div>
-          <p style="font-family: 'Ogg'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 32px; color: var(--kin-black-color);">High Rhode</p>
-          <p class="body-roman-sm" style=" color: var(--kin-black-color); ">Single bottle, $39</p>
-          <p class="universe-14-31" style="letter-spacing: 0.777778px; text-transform: uppercase; color: var(--kin-black-color); ">
-            <span>-</span>
-            <span style="font-weight: bolder;">1</span>
-            <span>+</span>
-          </p>
-        </div>
-        <img src="https://cdn.shopify.com/s/files/1/0706/8103/5071/files/close-icon.png?v=1673602273" style="width: 18px; height: 18px; cursor: pointer;">
-      </div>
-      <hr style="border: 2px solid #272727; margin: 14px 0 18px" />
-      <div style="display: flex; align-items: center; justify-content: space-between; ">
-        <p style="font-family: 'Univers'; font-size: 11px; line-height: 20px; letter-spacing: 0.458333px; text-transform: uppercase; color: #2B2B2B; ">Subtotal</p>
-        <p class="universe-14-31" style="letter-spacing: 0.777778px; text-transform: uppercase; color: #2D2D2D; font-weight: bolder;">$39.00</p>
-      </div>
+      {% if cart.item_count > 0 %}
+        {% for item in cart.items %}
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <img src="{{item.image | image_url: width: 38, height: 78}}" />
+            <div>
+              <p style="font-family: 'Ogg'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 32px; color: var(--kin-black-color);">{{ item.product.title }}</p>
+              <p class="body-roman-sm" style=" color: var(--kin-black-color); ">Single bottle, ${{ item.product.price | divided_by: 100.00 | json }}</p>
+              <p class="universe-14-31" style="letter-spacing: 0.777778px; text-transform: uppercase; color: var(--kin-black-color); ">
+                <span>-</span>
+                <span style="font-weight: bolder;">{{ cart.item_count }}</span>
+                <span>+</span>
+              </p>
+            </div>
+            <img src="https://cdn.shopify.com/s/files/1/0706/8103/5071/files/close-icon.png?v=1673602273" style="width: 18px; height: 18px; cursor: pointer;">
+          </div>
+          <hr style="border: 2px solid #272727; margin: 14px 0 18px" />
+          <div style="display: flex; align-items: center; justify-content: space-between; ">
+            <p style="font-family: 'Univers'; font-size: 11px; line-height: 20px; letter-spacing: 0.458333px; text-transform: uppercase; color: #2B2B2B; ">Subtotal</p>
+            <p class="universe-14-31" style="letter-spacing: 0.777778px; text-transform: uppercase; color: #2D2D2D; font-weight: bolder;">${{ cart.item_count | times: item.product.price | divided_by: 100.00 }}</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p style="font-family: 'Ogg'; font-style: normal; font-weight: 400; font-size: 40.32px; line-height: 53px; text-align: center; color: var(--kin-black-color);">Your cart is thirsty.</p>
+      {% endif %}
     </div>
     <div>
       <button style="width: 341px; height:39px; margin: 0 auto; background: #1D1D1D;"></button>

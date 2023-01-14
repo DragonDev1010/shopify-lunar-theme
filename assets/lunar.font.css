@@ -76,6 +76,11 @@
   /* IE9 Compat Modes */
 }
 
+@font-face {
+  font-family: 'Ogg Bold Italic';
+  src: url("./fonts/ogg/Ogg-Bold-Italic.ttf") format("ttf");
+}
+
 .text-h1 {
   font-family: 'Ogg';
   font-size: 97px;
@@ -191,4 +196,13 @@
   font-family: 'Univers';
   font-size: 14px;
   line-height: 31px;
+}
+
+.universe-14-30 {
+  font-family: 'Univers';
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.16667px;
+  text-transform: uppercase;
 }
