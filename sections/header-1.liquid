@@ -2,7 +2,9 @@
   <button class="primary-default-btn" onclick="openNav()">
     <p style="">MENU</p>
   </button>
-  <img src="{{section.settings.logo | img_url: '81x49' }}" style="cursor: pointer;" />
+  <a href="{{ shop.url }}" target="_blank">
+    <img src="{{section.settings.logo | img_url: '81x49' }}" style="cursor: pointer;" />
+  </a>
   <div style="display: flex; align-items:center; gap: 32px;">
     <button style="background: none; border:none; outline:none;">
       <p class="cta-text-link" style="color: var(--white-color);">Log In</p>
@@ -16,8 +18,8 @@
 </div>
 <script>
   /* Set the width of the side navigation to 250px */
+  var mediaQuery = window.matchMedia("(max-width: 700px)")
   function openNav() {
-    var mediaQuery = window.matchMedia("(max-width: 700px)")
     if (mediaQuery.matches) {
       document.getElementById("slideNavbar").style.width = "100%";
     } else {
@@ -26,7 +28,11 @@
   }
 
   function openSlideOpencart() {
-    document.getElementById("slideOpencart").style.width = "414px"
+    if (mediaQuery.matches) {
+      document.getElementById("slideOpencart").style.width = "100%"
+    } else {
+      document.getElementById("slideOpencart").style.width = "414px"
+    }
   }
 </script>
 {% schema %}

@@ -31,6 +31,7 @@ hr {
 button {
   cursor: pointer;
 }
+
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -59,12 +60,22 @@ button {
 /* The navigation menu links */
 .sidenav a {
   text-transform: uppercase;
-  color: var(--black-1-color);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.slide-navbar-text-lg {
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  color: var(--kin-black-color);
+}
+
+.sidenav a:hover,
+.slide-navbar-text-lg:hover {
+  color: rgb(232, 15, 192);
 }
 
 /* Position and style the close button (top right corner) */
@@ -74,6 +85,24 @@ button {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  #slide-navbar-product-link {
+    display: flex;
+    align-items: center;
+    gap: 10px
+  }
+
+  #slide-navbar-product-img {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  #slide-navbar-product-img {
+    display: none;
+  }
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
