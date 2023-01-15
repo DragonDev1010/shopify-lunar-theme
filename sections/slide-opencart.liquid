@@ -18,9 +18,9 @@
               <p style="font-family: 'Ogg'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 32px; color: var(--kin-black-color);">{{ item.product.title }}</p>
               <p class="body-roman-sm" style=" color: var(--kin-black-color); ">Single bottle, ${{ item.product.price | divided_by: 100.00 | json }}</p>
               <p class="universe-14-31" style="letter-spacing: 0.777778px; text-transform: uppercase; color: var(--kin-black-color); ">
-                <span>-</span>
+                <span style="cursor: pointer;">-</span>
                 <span style="font-weight: bolder;">{{ cart.item_count }}</span>
-                <span>+</span>
+                <span style="cursor: pointer;">+</span>
               </p>
             </div>
             <img src="https://cdn.shopify.com/s/files/1/0706/8103/5071/files/close-icon.png?v=1673602273" style="width: 18px; height: 18px; cursor: pointer;">

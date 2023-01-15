@@ -73,7 +73,7 @@ button {
   color: var(--kin-black-color);
 }
 
-.sidenav a:hover,
+#slide-navbar-link-container a:hover,
 .slide-navbar-text-lg:hover {
   color: rgb(232, 15, 192);
 }
@@ -85,6 +85,18 @@ button {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+#slide-navbar-link-container {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1em;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+#slide-navbar-link-container a {
+  color: var(--black-1-color);
 }
 
 @media screen and (max-width: 700px) {
@@ -169,4 +181,26 @@ button {
   font-weight: 400;
   font-size: 60px;
   line-height: 90px;
+}
+
+.section-hero-container {
+  height: calc(100vh - 81px);
+}
+@media screen and (max-width: 700px) {
+  .section-hero-container {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .section-hero-container {
+    padding: 0 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
